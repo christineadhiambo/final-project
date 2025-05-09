@@ -1,0 +1,205 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #2E7D32;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav h1 {
+  color: #FFF;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #FBC02D;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h2, section h3 {
+  color: #2E7D32;
+  margin-bottom: 20px;
+}
+
+section p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #FBC02D;
+  padding: 60px 20px;
+}
+
+#hero h2 {
+  font-size: 36px;
+}
+
+#hero p {
+  font-size: 18px;
+}
+
+/* Services Section */
+#services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#services .card {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Testimonials Section */
+#testimonials .card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Resources Section */
+#resources {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#resources .card {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* FAQ Section */
+#faq .card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact input {
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact button {
+  background-color: #D81B60;
+  color: #FFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact button:hover {
+  background-color: #C2185B;
+}
+
+/* Footer */
+footer {
+  background-color: #2E7D32;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media Queries for MD Breakpoint (Tablet, 768px) */
+@media (max-width: 768px) {
+  #services, #resources {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #services .card, #resources .card {
+    min-width: 80%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Media Queries for SM Breakpoint (Mobile, 480px) */
+@media (max-width: 480px) {
+  #hero h2 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  #contact form {
+    max-width: 100%;
+  }
+}
