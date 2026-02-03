@@ -129,8 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="product-image" style="background-image: url('${product.image}')"></div>
                 <div class="product-info">
                     <h4>${product.name}</h4>
-                    <div class="product-price">$${product.price.toFixed(2)}</div>
-                    <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+                    <div class="product-price">kshskshs{product.price.toFixed(2)}</div>
+                    <button class="add-to-cart" data-id="kshs{product.id}">Add to Cart</button>
                 </div>
             `;
             productsGrid.appendChild(productCard);
